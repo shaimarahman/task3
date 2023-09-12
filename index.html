@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        body{font-family:Arial,sans-serif;background:#f0f0f0;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+        form{background:#fff;padding:20px;border-radius:5px;box-shadow:0 0 5px rgba(0,0,0,.3);width:300px;text-align:center;}
+        label,input[type="text"],input[type="email"],input[type="number"],textarea,input[type="radio"],input[type="checkbox"]{display:block;margin:10px 0;padding:5px;width:100%;}
+        button[type="submit"]{background:#333;color:#fff;padding:10px 20px;border:none;border-radius:3px;cursor:pointer;width:100%;margin-top:10px;}
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email ID:</label>
+        <input type="email" name="email" required>
+
+        <label>Roll No:</label>
+        <input type="text" name="rollNo" required>
+
+        <label>Branch:</label>
+        <input type="radio" name="branch" value="CSE" required> CSE
+        <input type="radio" name="branch" value="ECE" required> ECE
+        <input type="radio" name="branch" value="ME" required> ME
+
+        <label>Interests:</label>
+        <input type="checkbox" name="interests[]" value="Web Dev"> Web Dev
+        <input type="checkbox" name="interests[]" value="Python"> Python
+        <input type="checkbox" name="interests[]" value="Java"> Java
+        <input type="checkbox" name="interests[]" value="AI/ML"> AI/ML
+        <input type="checkbox" name="interests[]" value="Blockchain"> Blockchain
+
+        <label>Message:</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
